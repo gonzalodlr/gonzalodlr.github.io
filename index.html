@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gonzalo</title>
+    <meta name="description" content="Curriculum de Gonzalo De Los Reyes Sanchez.">
+    <meta name="keywords" content="gonzalo,de los reyes, sanchez, gonzalo de los reyes, gonzalo de los reyes sanchez">
+    <meta name="author" content="Gonzalo De Los Reyes Sanchez">
+    <meta name="copyright" content="Gonzalo De Los Reyes Sanchez">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/logo.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gonzalo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Gonzalo.jpg" alt="">
+            </div>
+            <h3><br> Gonzalo De Los Reyes Sanchez
+            </h3>
+            <p><br></p>
+            <h4>Ingeniero Informático</h4>
+            <div class="redes">
+                <a href="https://github.com/gonzalodlr"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/gonzalo.dlr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gonzalodlr/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Gonzalo.</span> Soy un apasionado del mundo de la informatica, me encantan los nuevos
+                retos. Actualmente soy estudiante de Ingeniería Informática, finalizando el último curso del grado en
+                Ciudad Real. Con
+                muchas ganas de aprender y mejorar.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            6 de Julio de 2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            606 81 XX 1X
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            3bgonzalodelosreyes@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ciudad Real, España
+                        </li>
+                        <p><br>Me considero investigador y resolutivo, no me gusta dejar <br> las cosas a medias. Si
+                            realizo algo, lo realizo bien.</p>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Coches</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Programar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-tree"></i>
+                            <span>Naturaleza</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Tecnologías</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Futbol</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-stairs"></i>
+                            <span>Progresar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            -->
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Efectividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>ESO Bilingüe</h4>
+                        <span class="casa">IES Universidad Laboral</span>
+                        <span class="fecha">2013 - 2017</span>
+                        <p>En mi etapa de adolescente obtuve la ESO (educación básica) en bilingüe, en el instituto: IES
+                            Universidad
+                            Laboral de Toledo, España.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller</h4>
+                        <span class="casa">IES Universidad Laboral</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Posteriormente de la ESO completé mis estudios de bachiller en ciencias tecnológicas y
+                            matemáticas académicas, en el instituto: IES Universidad
+                            Laboral de Toledo, España.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grado en Ingeniería Informática</h4>
+                        <span class="casa">Universidad de Castilla la Mancha</span>
+                        <span class="fecha">2020 - 2024</span>
+                        <p>Actualmente me encuentro terminando el grado en Ingeniería Informática, en la Escuela
+                            Superior de Informática, UCLM de Ciudad Real, España.
+                            <br>Especialidad: en Tecnologías de la Información.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Otras formaciones de interés</h3>
+                    <div class="item der">
+                        <h4>First Certificate in English</h4>
+                        <span class="casa">Cambridge International Education</span>
+                        <span class="fecha">2019</span>
+                        <p>Certificado de idioma Inglés nivel: B2</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Permiso de conducir</h4>
+                        <span class="casa">DGT</span>
+                        <span class="fecha">2020</span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Estudios en el extranjero</h4>
+                        <span class="casa">Università degli Studi di Bari Aldo Moro</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Un año de Erasmus en Italia, en la Universidad Uniba, Bari, Italia. Obtuve experiencia en el
+                            lenguaje C, control de versiones Git, Java y testing. Además de vivir una
+                            experiencia
+                            distinta y bastante satisfactoria al salir de mi zona de confort y vivir solo en un país
+                            extranjero. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://gonzalodlr.github.io/gonzalodelosreyessanchez.github.io">
+                        <img src="img/p1.jpg" alt="web gonzalo">
+                        <div class="overlay">
+                            <h3>Blog personal</h3>
+                            <p>Para la asignatura de Comercio Electrónico, he diseñado un portfolio.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/gonzalodlr/K-Means">
+                        <img src="img/k-means.png" alt="K-Means">
+                        <div class="overlay">
+                            <h3>K-Means</h3>
+                            <p>Proyecto para agrupar datos y formar gráficos</p>
+                    </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/ajedrez.png" alt="ajedrez">
+                <div class="overlay">
+                    <h3>Juego del ajedrez</h3>
+                    <p>Dado 7 reinas aleatorias, configurar que no se choque ninguna</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/starwar.jpeg" alt="starwar">
+                <div class="overlay">
+                    <h3>Star Wars</h3>
+                    <p>Proyecto para agilizar aprendizaje en java de grafos y algoritmos de búsqueda.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <a href="https://vm.tiktok.com/ZGeNPrBff/">
+                    <img src="img/simulador.jpeg" alt="simracing">
+                    <div class="overlay">
+                        <h3>Simulador</h3>
+                        <p>Proyecto de simracing. Empleo arduino para programar placa base y así hacer funcionar dos
+                            microinterruptores.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <img src="img/gomera.png" alt="">
+                <div class="overlay">
+                    <h3>La Gomera</h3>
+                    <p>Proyecto para Sistemas Inteligentes, se trata de un programa que facilita un camino
+                        dependiendo de la estrategia elegida por el usuario para llegar de una coordenada a otra.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/c9ca0ca02f9126ba0761eb24fc91d406 " method="POST" />
+                    <input name="nombre" id="nombre" type="name" placeholder="Nombre" required>
+                    <input name="correo" id="correo" type="email" placeholder="Dirección de correo electrónico"
+                        required>
+                    <input name="telefono" id="telefono" type="" placeholder="Número de teléfono" required>
+                    <textarea name="mensaje" id="" cols="35" rows="10" placeholder="Mensaje" required></textarea>
+                    <button id="alerta" type="submit" class="submit"> Enviar Mensaje <i
+                            class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <input type="hidden" name="_captcha" value="true"></input>
+                    <input type="hidden" name="_next"
+                        value="https://gonzalodlr.github.io/gonzalodelosreyessanchez.github.io">
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24810.250604189026!2d-3.9475875670570795!3d38.986075297554684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6bdcb33d97174d%3A0xefaf23e8b1e79c2b!2sCiudad%20Real!5e0!3m2!1sen!2ses!4v1702488705949!5m2!1sen!2ses"
+                            style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ciudad Real, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: 3bgonzalodelosreyes@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/gonzalodlr"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/gonzalo.dlr"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gonzalodlr/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>@copyright Gonzalo De Los Reyes Sánchez</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
