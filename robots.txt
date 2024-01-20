@@ -1,0 +1,3 @@
+user-agent: *
+disallow: /img/
+sitemap: https://gonzalodlr.github.io/sitemap.xml
