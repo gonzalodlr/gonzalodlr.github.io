@@ -57,7 +57,7 @@ html {
   cursor: pointer;
   display: none;
 }
-/* SECCION I N I C I O */
+/* Seccion INICIO */
 .inicio {
   background: linear-gradient(
       to top,
@@ -72,6 +72,7 @@ html {
   align-items: center;
 }
 .inicio .contenido-banner {
+  position: relative;
   padding: 20px;
   background-color: #1e2326;
   max-width: 350px;
@@ -103,6 +104,10 @@ html {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+.inicio .contenido-banner .redes {
+  display: flex;
+  justify-content: center;
+}
 .inicio .contenido-banner .redes a {
   color: #fff;
   display: inline-block;
@@ -119,6 +124,8 @@ html {
 .inicio .contenido-banner .redes a:hover {
   background-color: #1cb698;
 }
+
+/* Seccion SOBRE MI */
 .sobremi {
   background-color: #1e2326;
   color: #fff;
@@ -696,6 +703,8 @@ html {
   display: inline-block;
   margin-right: 20px;
 }
+
+/* SECCION FOOTER */
 footer {
   background-color: #252a2e;
   color: #fff;
@@ -733,6 +742,9 @@ footer .arriba {
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+}
+footer .redes a:hover {
+  background-color: #1cb698;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 980px) {

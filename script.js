@@ -13,6 +13,15 @@ document.getElementById("alerta").onclick = function () {
   }
 };
 
+// Descargar cv
+function abrirPDF() {
+  // Ruta del archivo PDF en la carpeta 'src'
+  var rutaPDF = "src/CV.pdf";
+
+  // Abre una nueva pestaña con el PDF
+  window.open(rutaPDF, "_blank");
+}
+
 let menuVisible = false;
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu() {
