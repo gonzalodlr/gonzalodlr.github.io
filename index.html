@@ -19,6 +19,8 @@
     <link rel="icon" href="img/logo.jpg">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <meta name="google-site-verification" content="GLmyTOE48KwHtlGjEFNf9qE-Ao0shySN9xillvWyElk" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,9 +34,9 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">FORMACIÓN</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#projects" onclick="seleccionar()">PROYECTOS</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -81,10 +83,6 @@
                             6 de Julio de 2002
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            606 81 32 11
-                        </li>
-                        <li>
                             <strong>Email</strong>
                             3bgonzalodelosreyes@gmail.com
                         </li>
@@ -103,6 +101,7 @@
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-car"></i>
+                            <!--<img src="img/skills/java.webp" alt="java">-->
                             <span>Coches</span>
                         </div>
                         <div class="interes">
@@ -143,133 +142,25 @@
         </div>
     </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Soft Skills</h3>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>C#</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>C</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Hard Skills</h3>
-                    <div class="skill">
-                        <span>Efectividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Adaptación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Resolución de proyectos</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Formacion</h2>
+            <h2>Formación</h2>
             <div class="fila">
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>ESO Bilingüe</h4>
-                        <span class="casa">IES Universidad Laboral</span>
-                        <span class="fecha">2013 - 2017</span>
-                        <p>En mi etapa de adolescente obtuve la ESO (educación básica) en bilingüe, en el instituto: IES
-                            Universidad
-                            Laboral de Toledo, España.</p>
+                        <h4>Grado en Ingeniería Informática</h4>
+                        <span class="casa">Universidad de Castilla la Mancha</span>
+                        <span class="fecha">2020 - 2024</span>
+                        <p>Actualmente me encuentro terminando el grado en Ingeniería Informática, en la <a
+                                href="https://esi.uclm.es/" target="_blank">Escuela
+                                Superior de Informática</a>, Universidad de Castilla La Mancha, de Ciudad Real, España.
+                            <br>Especialidad: Tecnologías de la Información.
+                            ESI posee el certificado de calidad <a
+                                href="https://esi.uclm.es/index.php/sello-de-calidad-euro-inf/"
+                                target="_blank">Euro-Inf</a>
+                        </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -279,20 +170,22 @@
                         <span class="casa">IES Universidad Laboral</span>
                         <span class="fecha">2018 - 2020</span>
                         <p>Posteriormente de la ESO completé mis estudios de bachiller en ciencias tecnológicas y
-                            matemáticas académicas, en el instituto: IES Universidad
-                            Laboral de Toledo, España.</p>
+                            matemáticas académicas, en el instituto: <a href="https://www.ulaboral.org/"
+                                target="_blank">IES
+                                Universidad
+                                Laboral</a> de Toledo, España.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Grado en Ingeniería Informática</h4>
-                        <span class="casa">Universidad de Castilla la Mancha</span>
-                        <span class="fecha">2020 - 2024</span>
-                        <p>Actualmente me encuentro terminando el grado en Ingeniería Informática, en la Escuela
-                            Superior de Informática, UCLM de Ciudad Real, España.
-                            <br>Especialidad: en Tecnologías de la Información.
-                        </p>
+                        <h4>ESO Bilingüe</h4>
+                        <span class="casa">IES Universidad Laboral</span>
+                        <span class="fecha">2013 - 2017</span>
+                        <p>En mi etapa de adolescente obtuve la ESO (educación básica) en bilingüe, en el instituto: <a
+                                href="https://www.ulaboral.org/" target="_blank">IES
+                                Universidad
+                                Laboral</a> de Toledo, España.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -301,6 +194,20 @@
 
                 <div class="col derecha">
                     <h3>Otras formaciones de interés</h3>
+                    <div class="item der">
+                        <h4>Estudios en el extranjero</h4>
+                        <span class="casa">Università degli Studi di Bari Aldo Moro</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Un año de Erasmus en Italia, en la Universidad <a href="https://www.uniba.it/it"
+                                target="_blank">Uniba</a>, Bari, Italia. Obtuve experiencia en el
+                            lenguaje C, control de versiones Git, Java y testing. Además de vivir una
+                            experiencia
+                            distinta y bastante satisfactoria al salir de mi zona de confort y vivir solo en un país
+                            extranjero. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
                     <div class="item der">
                         <h4>First Certificate in English</h4>
                         <span class="casa">Cambridge International Education</span>
@@ -314,20 +221,7 @@
                         <h4>Permiso de conducir</h4>
                         <span class="casa">DGT</span>
                         <span class="fecha">2020</span>
-                        <p></p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Estudios en el extranjero</h4>
-                        <span class="casa">Università degli Studi di Bari Aldo Moro</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Un año de Erasmus en Italia, en la Universidad Uniba, Bari, Italia. Obtuve experiencia en el
-                            lenguaje C, control de versiones Git, Java y testing. Además de vivir una
-                            experiencia
-                            distinta y bastante satisfactoria al salir de mi zona de confort y vivir solo en un país
-                            extranjero. </p>
+                        <p>Carnet de conducir vehículos</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -337,60 +231,274 @@
         </div>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <h3>Soft Skills</h3>
+            <div class="fila">
+                <!-- Soft Skills -->
+                <div class="contenedor-softskills">
+                    <div class="aptitud">
+                        <img src="img/aptitudes/aprendizaje.png" alt="aprendizaje">
+                        <span>Aprendizaje</span>
+                    </div>
+                    <div class="aptitud">
+                        <img src="img/aptitudes/comunicacion.png" alt="comunicacion">
+                        <span>Comunicación</span>
+                    </div>
+                    <div class="aptitud">
+                        <img src="img/aptitudes/trabajador.png" alt="trabajador">
+                        <span>Trabajador</span>
+                    </div>
+                    <div class="aptitud">
+                        <img src="img/aptitudes/creatividad.png" alt="aprendizaje">
+                        <span>Aprendizaje</span>
+                    </div>
+                    <div class="aptitud">
+                        <img src="img/aptitudes/efectividad.png" alt="eficaz">
+                        <span>Eficaz</span>
+                    </div>
+                    <div class="aptitud">
+                        <img src="img/aptitudes/equipo.png" alt="equipo">
+                        <span>Equipo</span>
+                    </div>
+                </div>
+            </div>
+            <h3>Hard Skills</h3>
+            <!-- <div class="fila">
+                - Technical Skill 
+                <div class="col">
+                    <h4>Lenguajes de Programación</h4>
+                    <div class="contenedor-aptitudes">
+                        <div class="aptitudes">
+                            <img src="img/skills/java.webp" alt="java">
+                            <span>Java</span>
+                        </div>
+                        <div class="aptitudes">
+                            <img src="img/skills/python.webp" alt="python">
+                            <span>Python</span>
+                        </div>
+                        <div class="aptitudes">
+                            <img src="img/skills/csharp.png" alt="csharp" class="img2">
+                            <span>C#</span>
+                        </div>
+                        <div class="aptitudes">
+                            <img src="img/skills/c.webp" alt="c">
+                            <span>C</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-auto" style="font-size:22px">Lenguajes de programación</div>
+                        <div class="col">
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="img/skills/c.webp" class="clients-image img-fluid" title="Lenguaje C"
+                            alt="icono lenguaje C">
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/csharp.png" class="clients-image img-fluid" title="Lenguaje csharp"
+                            alt="icono lenguaje csharp">
+                    </div>
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="img/skills/python.webp" class="clients-image img-fluid" title="Lenguaje Python"
+                            alt="icono lenguaje Python">
+                    </div>
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="img/skills/java.webp" class="clients-image img-fluid rounded-circle"
+                            title="Lenguaje Java" alt="icono lenguaje Java">
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-auto" style="font-size:22px">Desarrollo Web</div>
+                        <div class="col">
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/htmlicon.png" class="clients-image img-fluid rounded-circle"
+                            title="Lenguaje HTML" alt="icono lenguaje HTML">
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/js.png" class="clients-image img-fluid rounded-circle"
+                            title="Lenguaje JavaScript" alt="icono lenguaje JavaScript">
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/css.png" class="clients-image img-fluid rounded-circle"
+                            title="Lenguaje CSS" alt="icono lenguaje CSS">
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-auto" style="font-size:22px">Bases de datos</div>
+                        <div class="col">
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="img/skills/mySQL.webp" class="clients-image img-fluid" alt="icono MySQL">
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-auto" style="font-size:22px">Entornos de desarrollo</div>
+                        <div class="col">
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/vscode.webp" class="clients-image img-fluid" title="Visual Studio Code"
+                            alt="icono VS Code">
+                    </div>
+
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/visualstudio.webp" class="clients-image img-fluid" title="Visual Studio"
+                            alt="icono Visual Studio">
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/eclipse.webp" class="clients-image img-fluid" title="Eclipse"
+                            alt="icono Eclipse">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-auto" style="font-size:22px">Control de versiones</div>
+                        <div class="col">
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/githubdarkmode.png" class="clients-image img-fluid" title="GitHub"
+                            alt="icono GitHub">
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/git.webp" class="clients-image img-fluid" title="Git" alt="Git">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                        </div>
+                        <div class="col-auto" style="font-size:22px">Gestores de Contenido</div>
+                        <div class="col">
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="img/skills/prestashop.webp" class="clients-image img-fluid" title="Prestashop"
+                            alt="Prestashop">
+                    </div>
+                    <div class="col-lg-1 col-4 me-auto clients-item-height">
+                        <img src="img/skills/shopify.webp" class="clients-image img-fluid" title="Shopify"
+                            alt="Shopify">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="projects" class="projects">
         <div class="contenido-seccion">
             <h2>Proyectos</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <a href="https://gonzalodlr.github.io">
-                        <img src="img/p1.jpg" alt="web personal gonzalo">
-                        <div class="overlay">
-                            <h3>Blog personal</h3>
-                            <p>Para la asignatura de Comercio Electrónico, he diseñado un portfolio.</p>
+        </div>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-4 mx-auto mb-5">
+                    <div class="card text-center h-100 shadow-lg border-0 bg-light">
+                        <img class="card-img-top" src="img/gomera.png" alt="Project 1">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-3">Gomera</h5>
+                            <div class="mb-2">
+                                <div class="badge bg-custom-color rounded-pill">Python</div>
+                                <div class="badge bg-custom-color rounded-pill">.hdf5</div>
+                            </div>
+                            <p class="card-text">
+                                La gomera es un proyecto de la asignatura de Sistemas Inteligentes, se trata de un
+                                estudio geográfico del terreno. Los datos están contenidos en un archivo hdf5, y el
+                                proyecto desarrollado en Python. Este proyecto trata de entender los distintos
+                                algoritmos de búsqueda existentes, así como encontrar caminos eficientes dependiendo de
+                                la información.
+                            </p>
                         </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://github.com/gonzalodlr/K-Means">
-                        <img src="img/k-means.png" alt="K-Means">
-                        <div class="overlay">
-                            <h3>K-Means</h3>
-                            <p>Proyecto para agrupar datos y formar gráficos</p>
+                        <div class="card-footer bg-transparent mb-3">
+                            <a class="btn btn-outline-primary btn-sm text-uppercase custom-link"
+                                href="https://github.com/SI-CR/lab-c1-3" target="_blank">
+                                Source Code
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/ajedrez.png" alt="ajedrez">
-                    <div class="overlay">
-                        <h3>Juego del ajedrez</h3>
-                        <p>Dado 7 reinas aleatorias, configurar que no se choque ninguna</p>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/starwar.jpeg" alt="starwar">
-                    <div class="overlay">
-                        <h3>Star Wars</h3>
-                        <p>Proyecto para agilizar aprendizaje en java de grafos y algoritmos de búsqueda.</p>
+                <div class="col-lg-4 mx-auto mb-5">
+                    <div class="card text-center h-100 shadow-lg border-0 bg-light">
+                        <img class="card-img-top" src="img/k-means.png" alt="Project 2">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-3">K-means cluster</h5>
+                            <div class="mb-2">
+                                <div class="badge bg-custom-color rounded-pill">Java</div>
+                                <div class="badge bg-custom-color rounded-pill">MySQL</div>
+                            </div>
+                            <p class="card-text">
+                                Proyecto realizado con java y mysql para el curso de programación avanzada en Uniba,
+                                Italia. Trata de construir agrupaciones de datos mediante el algoritmo clustering. Este
+                                proyecto me ayudó a mejorar mis conocimientos en Java. Hay serialización de datos y
+                                deserialización de estos, además de lado del cliente y del servidor.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent mb-3">
+                            <a class="btn btn-outline-primary btn-sm text-uppercase custom-link"
+                                href="https://github.com/gonzalodlr/K-Means" target="_blank">
+                                Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <a href="https://vm.tiktok.com/ZGeNPrBff/">
-                        <img src="img/simulador.jpeg" alt="simracing">
-                        <div class="overlay">
-                            <h3>Simulador</h3>
-                            <p>Proyecto de simracing. Empleo arduino para programar placa base y así hacer funcionar dos
-                                microinterruptores.</p>
+                <div class="col-lg-4 mx-auto mb-5">
+                    <div class="card text-center h-100 shadow-lg border-0 bg-light">
+                        <img class="card-img-top" src="img/simulador.jpeg" alt="Project 3">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-3">Sequential Shifter</h5>
+                            <div class="mb-2">
+                                <div class="badge bg-custom-color rounded-pill">Arduino</div>
+                            </div>
+                            <p class="card-text">
+                                Proyecto personal para mi simulador de coches en el que construyo un cambio secuencial
+                                de manera casera, añadiendo dos micro interruptores soldados a una placa base con la que
+                                posteriormente mediante software Arduino configuro las marchas del coche.
+                            </p>
                         </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/gomera.png" alt="">
-                    <div class="overlay">
-                        <h3>La Gomera</h3>
-                        <p>Proyecto para Sistemas Inteligentes, se trata de un programa que facilita un camino
-                            dependiendo de la estrategia elegida por el usuario para llegar de una coordenada a otra.
-                        </p>
+                        <div class="card-footer bg-transparent mb-3">
+                            <a class="btn btn-outline-primary btn-sm text-uppercase custom-link"
+                                href="https://vm.tiktok.com/ZGeNPrBff/" target="_blank">
+                                Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -402,22 +510,23 @@
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
             <div class="fila">
-                <!-- Formulario -->
+                <!-- Tarjeta de Contacto -->
                 <div class="col">
-                    <form action="https://formsubmit.co/c9ca0ca02f9126ba0761eb24fc91d406 " method="POST">
-                        <input name="nombre" id="nombre" type="text" placeholder="Nombre" required>
-                        <input name="correo" id="correo" type="email" placeholder="Dirección de correo electrónico"
-                            required>
-                        <input name="telefono" id="telefono" type="tel" placeholder="Número de teléfono" required>
-                        <textarea name="mensaje" id="mensaje" cols="35" rows="10" placeholder="Mensaje"
-                            required></textarea>
-                        <button id="alerta" type="submit" class="submit"> Enviar Mensaje <i
-                                class="fa-solid fa-paper-plane"></i>
-                        </button>
-
-                        <input type="hidden" name="_captcha" value="true" />
-                        <input type="hidden" name="_next" value="https://gonzalodlr.github.io">
-                    </form>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>Ciudad Real, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>Email: <a
+                                    href="mailto:3bgonzalodelosreyes@gmail.com">3bgonzalodelosreyes@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin-in"></i>Linkedin: <a
+                                    href="https://www.linkedin.com/in/gonzalodlr" target="_blank"> gonzalodlr</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
@@ -425,18 +534,6 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24810.250604189026!2d-3.9475875670570795!3d38.986075297554684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6bdcb33d97174d%3A0xefaf23e8b1e79c2b!2sCiudad%20Real!5e0!3m2!1sen!2ses!4v1702488705949!5m2!1sen!2ses"
                             style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Ciudad Real, España
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: 3bgonzalodelosreyes@gmail.com
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -454,7 +551,7 @@
             <a href="https://www.linkedin.com/in/gonzalodlr/" target="_blank"><i
                     class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <p>@copyright Gonzalo De Los Reyes Sánchez</p>
+        <p>©<i>Copyright</i> Gonzalo De Los Reyes Sánchez. All right reserved</p>
     </footer>
 
     <script src="script.js"></script>

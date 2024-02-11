@@ -59,12 +59,7 @@ html {
 }
 /* Seccion INICIO */
 .inicio {
-  background: linear-gradient(
-      to top,
-      rgba(30, 35, 38, 0.8),
-      rgba(30, 35, 38, 1)
-    ),
-    url(img/fondo.jpg);
+  background-color: #252a2e;
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -201,6 +196,11 @@ html {
   font-size: 30px;
   margin-bottom: 10px;
 }
+.sobremi .fila .col .contenedor-intereses .interes img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
 .sobremi button {
   cursor: pointer;
   background-color: transparent;
@@ -228,8 +228,71 @@ html {
   width: 100%;
 }
 /* SECCION S K I L L S */
-.skills {
+.skills .fila {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .fila .contenedor-softskills {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+  justify-content: center; /* Centrar los elementos horizontalmente dentro del contenedor */
+  align-items: center; /* Centrar los elementos verticalmente dentro del contenedor */
+}
+.skills .fila .contenedor-softskills .aptitud {
+  width: 150px;
+  height: 200px;
   background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.skills .fila .contenedor-softskills .aptitud img {
+  max-height: 80%;
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+/* Solucion problema imagen csharp*/
+.img2 {
+  max-height: 50 !important;
+  max-width: 50px !important;
+}
+.skills .fila .col .contenedor-aptitudes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .fila .col .contenedor-aptitudes .aptitudes {
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.skills .fila .col .contenedor-aptitudes .aptitudes:hover {
+  background-color: #1cb698;
+}
+.skills .fila .col .contenedor-aptitudes .aptitudes i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.skills .fila .col .contenedor-aptitudes .aptitudes img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.skills {
+  background-color: #1e2326;
   color: #fff;
   padding: 50px 20px;
 }
@@ -243,8 +306,19 @@ html {
   text-align: center;
   padding: 20px 0;
 }
-.skills .fila {
-  display: flex;
+.skills h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+  color: #1cb698;
+}
+.skills h4 {
+  font-size: 18px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+  color: white;
 }
 .skills .fila .col {
   width: 50%;
@@ -260,188 +334,10 @@ html {
   display: block;
   margin-bottom: 10px;
 }
-.skills .skill .barra-skill {
-  height: 8px;
-  width: 80%;
-  background-color: #131517;
-  position: relative;
-  margin-bottom: 30px;
-}
-.skills .skill .progreso {
-  background-color: #1cb698;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 8px;
-}
-.skills .skill .barra-skill span {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #1cb698;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
-  top: -17px;
-  right: -15px;
-  font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .java {
-  width: 0%;
-  animation: 2s java forwards;
-}
-@keyframes java {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .python {
-  width: 0%;
-  animation: 2s python forwards;
-}
-@keyframes python {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-.skills .skill .sql {
-  width: 0%;
-  animation: 2s sql forwards;
-}
-
-.skills .skill .c- {
-  width: 0%;
-  animation: 2s c- forwards;
-}
-@keyframes c- {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-.skills .skill .c {
-  width: 0%;
-  animation: 2s c forwards;
-}
-@keyframes c {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-@keyframes sql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-.skills .skill .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-.skills .skill .efectividad {
-  width: 0%;
-  animation: 2s efectividad forwards;
-}
-@keyframes efectividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .trabajo {
-  width: 0%;
-  animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.skills .skill .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-
-.skills .skill .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-.skills .skill .adaptacion {
-  width: 0%;
-  animation: 2s adaptacion forwards;
-}
-@keyframes adaptacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .resolutivo {
-  width: 0%;
-  animation: 2s resolutivo forwards;
-}
-@keyframes resolutivo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
 
 /* SECCION CURRICULUM */
 .curriculum {
-  background-color: #1e2326;
+  background-color: #252a2e;
   color: #fff;
   padding: 50px 20px;
 }
@@ -544,69 +440,56 @@ html {
   position: relative;
   bottom: 4px;
 }
+.curriculum .fila .item a {
+  color: lightblue;
+  text-decoration: none;
+}
 /* SECCION PORTFOLIO */
-.portfolio {
+.projects {
   background-color: #252a2e;
   color: #fff;
   padding: 50px 20px;
 }
-.portfolio .contenido-seccion {
+.projects .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
-.portfolio h2 {
+.projects h2 {
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
-.portfolio .galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.card-body {
+  background-color: #1e2326;
 }
-.portfolio .galeria .proyecto {
-  position: relative;
-  max-width: 340px;
-  height: fit-content;
-  margin: 10px;
-  cursor: pointer;
+.card-img-top {
+  max-width: 100%;
+  max-height: fit-content;
+  aspect-ratio: 1;
 }
-.portfolio .galeria .proyecto a {
-  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-  color: inherit; /* Hereda el color del texto del contenedor padre (puede ajustarse según tus necesidades) */
+.card-title {
+  margin-bottom: 0.5rem;
+  color: #1cb698;
+  text-transform: uppercase;
+}
+body .bg-light {
+  background-color: #1e2326 !important;
+}
+.bg-custom-color {
+  background-color: #1cb698;
+  color: #fff;
+}
+.custom-link {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 1px solid #1cb698 !important;
+}
+.custom-link:hover {
+  background-color: #1cb698 !important;
+  color: #fff !important;
 }
 
-.portfolio .galeria .proyecto img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.portfolio .galeria .proyecto .overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.8));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1s;
-  font-size: 18px;
-  letter-spacing: 3px;
-  opacity: 0;
-}
-.portfolio .galeria .proyecto .overlay h3 {
-  margin-bottom: 20px;
-  transition: 1s;
-}
-.portfolio .galeria .proyecto .overlay:hover {
-  opacity: 1;
-}
-.portfolio .galeria .proyecto .overlay:hover h3 {
-  margin-bottom: 0px;
-}
 /* SECCION CONTACTO */
 .map-responsive {
   overflow: hidden;
@@ -646,49 +529,12 @@ html {
   padding: 10px;
   position: relative;
 }
-.contacto .col input,
-.contacto .col textarea {
-  display: block;
-  width: 100%;
-  padding: 18px;
-  border: none;
-  margin-bottom: 20px;
-  background-color: #252a2e;
-  color: #fff;
-  font-size: 18px;
-}
-.contacto button {
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #fff;
-  width: fit-content;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 22px;
-  font-size: 16px;
-  color: #fff;
-  position: relative;
-  z-index: 10;
-}
-.contacto button .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #1cb698;
-  z-index: -1;
-  transition: 1s;
-}
-.contacto button:hover .overlay {
-  width: 100%;
-}
 .contacto .col .info {
-  position: absolute;
-  top: 40%;
+  position: relative;
+  margin-top: 40%;
   background-color: #252a2e;
   padding: 20px;
-  max-width: 350px;
+  max-width: 450px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -697,6 +543,14 @@ html {
 }
 .contacto .col .info ul li {
   margin-bottom: 20px;
+}
+.contacto .col .info ul li a {
+  color: white;
+  text-decoration: none;
+}
+.contacto .col .info ul li a:hover {
+  color: #1cb698;
+  text-decoration: underline;
 }
 .contacto .col .info ul li i {
   color: #1cb698;

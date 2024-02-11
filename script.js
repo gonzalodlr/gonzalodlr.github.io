@@ -1,18 +1,5 @@
 /** @format */
 
-// JavaScript para mostrar la pregunta de confirmación
-document.getElementById("alerta").onclick = function () {
-  // Utilizamos la función confirm() para mostrar la pregunta
-  var confirmacion = confirm("¿Estás seguro de enviar un correo?");
-
-  // Verificamos la respuesta del usuario
-  if (confirmacion) {
-    alert("Correo enviado."); // Mensaje si el usuario hace clic en "Aceptar"
-  } else {
-    alert("Envío de correo cancelado."); // Mensaje si el usuario hace clic en "Cancelar"
-  }
-};
-
 // Descargar cv
 function abrirPDF() {
   // Ruta del archivo PDF en la carpeta 'src'
