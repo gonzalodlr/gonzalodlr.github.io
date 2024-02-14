@@ -74,8 +74,7 @@ html {
   align-items: center;
 }
 .inicio .contenido-banner {
-  margin-bottom: 15px;
-  position: relative;
+  position: block;
   padding: 20px;
   background-color: #1e2326;
   max-width: 350px;
@@ -264,11 +263,6 @@ html {
   max-height: 80%;
   max-width: 80%;
   margin-bottom: 10px;
-}
-/* Solucion problema imagen csharp*/
-.img2 {
-  max-height: 50px !important;
-  max-width: 50px !important;
 }
 .skills .fila .col .contenedor-aptitudes {
   display: flex;
