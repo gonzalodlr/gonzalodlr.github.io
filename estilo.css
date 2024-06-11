@@ -6,6 +6,7 @@
   font-family: "Work Sans";
   margin: 0;
   padding: 0;
+  color: white;
 }
 html {
   /* me permite deslizar cuando hago clic en los links del menu */
@@ -466,9 +467,8 @@ html {
   background-color: #1e2326;
 }
 .card-img-top {
-  max-width: 100%;
-  max-height: fit-content;
-  aspect-ratio: 1;
+  width: 100;
+  height: fit-content;
 }
 .card-title {
   margin-bottom: 0.5rem;
@@ -479,7 +479,7 @@ body .bg-light {
   background-color: #1e2326 !important;
 }
 .bg-custom-color {
-  background-color: #1cb698;
+  background-color: rgb(95, 92, 86);
   color: #fff;
 }
 .custom-link {
@@ -598,6 +598,9 @@ footer .arriba {
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+}
+footer .arriba i:hover {
+  color: black;
 }
 footer .redes a:hover {
   background-color: #1cb698;
