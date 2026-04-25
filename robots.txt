@@ -1,0 +1,4 @@
+user-agent: *
+disallow: /img/aptitudes
+disallow: /img/skills
+sitemap: https://gonzalodlr.github.io/sitemap.xml
