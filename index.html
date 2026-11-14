@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo · Consultor de Ciberseguridad</title>
+    <meta name="description" content="Gonzalo, ingeniero informático y consultor de ciberseguridad: trayectoria, proyectos y contacto.">
+    <meta name="author" content="Gonzalo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#18191b" media="(prefers-color-scheme: dark)">
+    <meta name="google-site-verification" content="GLmyTOE48KwHtlGjEFNf9qE-Ao0shySN9xillvWyElk" />
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        // Aplica el tema guardado antes de pintar para evitar parpadeo
+        document.documentElement.classList.add("js");
+        try {
+            var t = localStorage.getItem("tema");
+            if (t) document.documentElement.dataset.theme = t;
+        } catch (e) { }
+    </script>
+</head>
+
+<body>
+    <!-- FONDO: malla que reacciona al cursor -->
+    <canvas id="malla" aria-hidden="true"></canvas>
+
+    <!-- SPRITE DE ICONOS -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-github" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+        </symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2"
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" />
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" />
+        </symbol>
+        <symbol id="i-flecha" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M7 17 17 7M8 7h9v9" />
+        </symbol>
+        <symbol id="i-sol" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </g>
+        </symbol>
+        <symbol id="i-luna" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"
+                d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+        </symbol>
+        <symbol id="i-buscar" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+            </g>
+        </symbol>
+        <symbol id="i-cerrar" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+        </symbol>
+    </svg>
+
+    <!-- CABECERA -->
+    <header class="barra">
+        <a href="#inicio" class="logo" aria-label="Inicio">G<span>.</span></a>
+        <nav id="nav" class="nav">
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#skills">Skills</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="acciones">
+            <button class="btn-icono btn-paleta" id="abrir-paleta" aria-label="Buscar (Ctrl K)">
+                <svg><use href="#i-buscar" /></svg><kbd>Ctrl K</kbd>
+            </button>
+            <button class="btn-icono" id="tema" aria-label="Cambiar tema">
+                <svg class="ico-sol"><use href="#i-sol" /></svg>
+                <svg class="ico-luna"><use href="#i-luna" /></svg>
+            </button>
+            <button class="btn-icono btn-menu" id="menu" aria-label="Abrir menú" aria-expanded="false">
+                <svg><use href="#i-menu" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <!-- INICIO -->
+        <section id="inicio" class="hero">
+            <div class="avatar revelar">
+                <div class="orbita"><span></span></div>
+                <div class="foto"><img src="img/Gonzalo.webp" alt="Retrato de Gonzalo"></div>
+            </div>
+            <p class="estado revelar"><span class="punto"></span> Consultor de Ciberseguridad en Deloitte</p>
+            <h1 class="revelar">Ciberseguridad y tecnología.<br><span class="suave">Ayudo a las organizaciones a
+                    proteger sus sistemas, sus datos y su negocio.</span></h1>
+            <div class="cta revelar">
+                <a href="#proyectos" class="btn btn-primario">Ver proyectos</a>
+                <a href="https://www.linkedin.com/in/gonzalodlr/" class="btn" target="_blank" rel="noopener">
+                    <svg><use href="#i-linkedin" /></svg> LinkedIn
+                </a>
+                <a href="https://github.com/gonzalodlr" class="btn" target="_blank" rel="noopener">
+                    <svg><use href="#i-github" /></svg> GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobremi" class="seccion">
+            <header class="seccion-cabecera revelar">
+                <span class="etiqueta">Sobre mí</span>
+            </header>
+
+            <div class="bento">
+                <article class="tarjeta t-about revelar">
+                    <h2>Entender a fondo cómo funcionan los sistemas es el primer paso para protegerlos.</h2>
+                    <div class="t-about-texto">
+                        <p>Soy ingeniero informático y consultor de ciberseguridad. Ayudo a las organizaciones a
+                            construir una estrategia de ciberseguridad que tenga sentido para su negocio: qué proteger
+                            primero, cómo blindar sus redes, cómo preparar a las personas para que no sean el eslabón
+                            más débil y cómo cumplir la normativa sin convertirlo en un trámite.</p>
+                        <p>Actualmente amplío este enfoque a la <strong>gobernanza de la inteligencia artificial</strong>
+                            en materia de ciberseguridad, con criterios de control, riesgo y responsabilidad.</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta t-ruta revelar">
+                    <span class="etiqueta">Trayectoria</span>
+                    <ul class="ruta">
+                        <li><strong>Consultor de Ciberseguridad</strong><span>Deloitte</span></li>
+                        <li><strong>Ingeniería Informática</strong><span>Tecnologías de la Información</span></li>
+                        <li><strong>Experiencia internacional</strong><span>Un año de Erasmus trabajando en otro
+                                idioma</span></li>
+                        <li><strong>Inglés B2</strong><span>Cambridge First Certificate</span></li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta t-num revelar">
+                    <span class="numero"><span data-contar="6">6</span><i>+</i></span>
+                    <span class="etiqueta">Proyectos destacados</span>
+                </article>
+
+                <article class="tarjeta t-num t-num2 revelar">
+                    <span class="numero"><span data-contar="15">15</span><i>+</i></span>
+                    <span class="etiqueta">Tecnologías</span>
+                </article>
+
+                <article class="tarjeta t-intereses revelar">
+                    <span class="etiqueta">Intereses</span>
+                    <div class="chips">
+                        <span>Tecnología</span><span>Motor</span><span>Viajar</span>
+                        <span>Naturaleza</span><span>Deporte</span><span>Videojuegos</span>
+                    </div>
+                </article>
+
+                <a class="tarjeta t-github revelar" href="https://github.com/gonzalodlr" target="_blank" rel="noopener">
+                    <svg class="gh-grande"><use href="#i-github" /></svg>
+                    <div>
+                        <span class="etiqueta">Código</span>
+                        <h3>github.com/gonzalodlr</h3>
+                    </div>
+                    <svg class="flecha"><use href="#i-flecha" /></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="seccion">
+            <header class="seccion-cabecera revelar">
+                <span class="etiqueta">Skills</span>
+                <h2>Tecnologías con las que trabajo</h2>
+            </header>
+            <div class="skills">
+                <div class="tarjeta grupo revelar">
+                    <h3>Lenguajes</h3>
+                    <ul>
+                        <li><img src="img/skills/java.png" alt="">Java</li>
+                        <li><img src="img/skills/python.png" alt="">Python</li>
+                        <li><img src="img/skills/chsarp.png" alt="">C#</li>
+                        <li><img src="img/skills/c.png" alt="">C</li>
+                    </ul>
+                </div>
+                <div class="tarjeta grupo revelar">
+                    <h3>Web</h3>
+                    <ul>
+                        <li><img src="img/skills/htmlicon.png" alt="">HTML</li>
+                        <li><img src="img/skills/css.png" alt="">CSS</li>
+                        <li><img src="img/skills/js.png" alt="">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tarjeta grupo revelar">
+                    <h3>Datos y e-commerce</h3>
+                    <ul>
+                        <li><img src="img/skills/mySQL.png" alt="">MySQL</li>
+                        <li><img src="img/skills/prestashop.webp" alt="">PrestaShop</li>
+                        <li><img src="img/skills/shopify.webp" alt="">Shopify</li>
+                    </ul>
+                </div>
+                <div class="tarjeta grupo revelar">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li><img src="img/skills/git.png" alt="">Git</li>
+                        <li><img class="ico-gh" src="img/skills/github.png" alt="">GitHub</li>
+                        <li><img src="img/skills/vscode.png" alt="">VS Code</li>
+                        <li><img src="img/skills/visualstudio.png" alt="">Visual Studio</li>
+                        <li><img src="img/skills/eclipse.png" alt="">Eclipse</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="seccion">
+            <header class="seccion-cabecera revelar">
+                <span class="etiqueta">Proyectos</span>
+                <h2>Trabajo seleccionado</h2>
+            </header>
+            <div class="proyectos" id="lista-proyectos">
+                <noscript><p>Puedes ver todos mis proyectos en <a href="https://github.com/gonzalodlr">GitHub</a>.</p></noscript>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion">
+            <div class="tarjeta contacto revelar">
+                <div>
+                    <span class="etiqueta">Contacto</span>
+                    <h2>¿Hablamos?</h2>
+                    <p>La forma más directa de contactar conmigo es a través de LinkedIn.</p>
+                </div>
+                <div class="cta">
+                    <a href="https://www.linkedin.com/in/gonzalodlr/" class="btn btn-primario" target="_blank"
+                        rel="noopener"><svg><use href="#i-linkedin" /></svg> Escríbeme</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie contenedor">
+        <p>© <span id="anio">2026</span> Gonzalo</p>
+        <div class="redes">
+            <a href="https://github.com/gonzalodlr" aria-label="GitHub" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg></a>
+            <a href="https://www.linkedin.com/in/gonzalodlr/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg><use href="#i-linkedin" /></svg></a>
+            <a href="https://www.instagram.com/gonzalo.dlr" aria-label="Instagram" target="_blank" rel="noopener"><svg><use href="#i-instagram" /></svg></a>
+        </div>
+    </footer>
+
+    <!-- DETALLE DE PROYECTO -->
+    <dialog id="modal" class="modal" aria-labelledby="modal-titulo">
+        <button class="btn-icono cerrar" data-cerrar aria-label="Cerrar"><svg><use href="#i-cerrar" /></svg></button>
+        <div id="modal-contenido"></div>
+    </dialog>
+
+    <!-- PALETA DE COMANDOS -->
+    <dialog id="paleta" class="paleta" aria-label="Buscar">
+        <div class="paleta-buscar">
+            <svg><use href="#i-buscar" /></svg>
+            <input id="paleta-input" type="text" placeholder="Ir a sección o proyecto…" autocomplete="off">
+            <kbd>Esc</kbd>
+        </div>
+        <ul id="paleta-lista" role="listbox"></ul>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
